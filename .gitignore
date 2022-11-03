@@ -1,0 +1,13 @@
+.pkl
+*.pkl
+*/*/.pkl
+
+.npz
+*.npz
+
+.pth
+.*/pth
+*.pth
+
+
+.log
