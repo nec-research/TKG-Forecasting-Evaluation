@@ -1,21 +1,21 @@
 [submodule "RE-Net"]
 	path = RE-Net
-	url = https://github.com/evaluationpaperTKG/RE-Net.git
+	url = https://github.com/nec-research/RE-Net.git
 [submodule "RE-GCN"]
 	path = RE-GCN
-	url = https://github.com/evaluationpaperTKG/RE-GCN.git
+	url = https://github.com/nec-research/RE-GCN.git
 [submodule "xERTE"]
 	path = xERTE
-	url = https://github.com/evaluationpaperTKG/xERTE.git
+	url = https://github.com/nec-research/xERTE.git
 [submodule "CyGNet"]
 	path = CyGNet
-	url = https://github.com/evaluationpaperTKG/CyGNet.git
+	url = https://github.com/nec-research/CyGNet.git
 [submodule "TLogic"]
 	path = TLogic
-	url = https://github.com/evaluationpaperTKG/TLogic.git
+	url = https://github.com/nec-research/TLogic.git
 [submodule "TANGO"]
 	path = TANGO
 	url = https://github.com/nec-research/TANGO.git
 [submodule "Timetraveler"]
 	path = Timetraveler
-	url = https://github.com/evaluationpaperTKG/Timetraveler.git
+	url = https://github.com/nec-research/Timetraveler.git
