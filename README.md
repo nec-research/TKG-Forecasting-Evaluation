@@ -1,6 +1,8 @@
 # TKG-Forecasting-Evaluation
 TKG Forecasting Evaluation Paper
 
+clone (including submodules with forked and modified orignal models): git clone --recursive https://github.com/nec-research/TKG-Forecasting-Evaluation.git
+
 ## Requirements
 * for each model create a conda environment, with the following names: xerte, regcn, renet, titer, tango, cygnet, tlogic
 * for each conda environment install the required packages as described by each method, see each repos requirements.txt
