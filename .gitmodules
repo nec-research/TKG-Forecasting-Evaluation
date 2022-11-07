@@ -3,19 +3,22 @@
 	url = https://github.com/nec-research/RE-Net.git
 [submodule "RE-GCN"]
 	path = RE-GCN
-	url = https://github.com/nec-research/RE-GCN.git
+	url = https://github.com/nec-research/RE-GCN
 [submodule "xERTE"]
 	path = xERTE
-	url = https://github.com/nec-research/xERTE.git
+	url = https://github.com/nec-research/xERTE
 [submodule "CyGNet"]
 	path = CyGNet
-	url = https://github.com/nec-research/CyGNet.git
+	url = https://github.com/nec-research/CyGNet
 [submodule "TLogic"]
 	path = TLogic
-	url = https://github.com/nec-research/TLogic.git
+	url = https://github.com/nec-research/TLogic
 [submodule "TANGO"]
 	path = TANGO
-	url = https://github.com/nec-research/TANGO.git
+	url = https://github.com/nec-research/TANGO
 [submodule "Timetraveler"]
 	path = Timetraveler
-	url = https://github.com/nec-research/Timetraveler.git
+	url = https://github.com/nec-research/Timetraveler
+[submodule "RE-NET"]
+	path = RE-NET
+	url = https://github.com/nec-research/RE-NET
