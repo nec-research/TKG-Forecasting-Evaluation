@@ -2,6 +2,7 @@
 TKG Forecasting Evaluation Paper
 
 **Please Cite our Paper**: Julia Gastinger, Timo Sztyler, Lokesh Sharma, Anett Schuelke. On the Evaluation of Methods for Temporal Knowledge Graph Forecasting. In *Temporal Graph Learning Workshop (TGL 2022), NeurIPS, New Orleans, United States of America*, 2022.
+https://openreview.net/pdf?id=J_SNklR-KR
 
 ## Clone (including submodules with forked and modified orignal models) 
 ```git clone --recursive https://github.com/nec-research/TKG-Forecasting-Evaluation.git```
