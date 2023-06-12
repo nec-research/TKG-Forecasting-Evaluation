@@ -22,6 +22,7 @@
 [submodule "RE-NET"]
 	path = RE-NET
 	url = https://github.com/nec-research/RE-NET
+
 [submodule "CEN"]
-        path = CEN
-        url = https://github.com/nec-research/CEN
+	path = CEN
+	url = https://github.com/nec-research/CEN
