@@ -2,13 +2,15 @@
 TKG Forecasting Evaluation Paper
 
 **Please Cite our Paper**: 
-Julia Gastinger, Timo Sztyler, Lokesh Sharma, Anett Schuelke, Heiner Stuckenschmidt. Comparing Apples and Oranges? On the Evaluation of Methods for Temporal Knowledge Graphs. ECML PKDD 2023.>
+Julia Gastinger, Timo Sztyler, Lokesh Sharma, Anett Schuelke, Heiner Stuckenschmidt. Comparing Apples and Oranges? On the Evaluation of Methods for Temporal Knowledge Graphs. In *ECML PKDD, Torino, Italy*, 2023.>
+
 
 or, older version:
+
 Julia Gastinger, Timo Sztyler, Lokesh Sharma, Anett Schuelke. On the Evaluation of Methods for Temporal Knowledge Graph Forecasting. In *Temporal Graph Learning Workshop (TGL 2022), NeurIPS, New Orleans, United States of America*, 2022.
 https://openreview.net/pdf?id=J_SNklR-KR
 
-**Supplementary material**: Please find the pdf with supplementary material in our files.
+**Supplementary material**: Please find the pdf with supplementary material in our github files: https://github.com/nec-research/TKG-Forecasting-Evaluation/blob/main/paper_supplementary_material.pdf
 
 ## Clone (including submodules with forked and modified orignal models) 
 ```git clone --recursive https://github.com/nec-research/TKG-Forecasting-Evaluation.git```
