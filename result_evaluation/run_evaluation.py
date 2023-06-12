@@ -3,15 +3,7 @@
  *
  *        File: run.py
  *
- *     Authors: Deleted for purposes of anonymity 
- *
- *     Proprietor: Deleted for purposes of anonymity --- PROPRIETARY INFORMATION
- * 
- * The software and its source code contain valuable trade secrets and shall be maintained in
- * confidence and treated as confidential information. The software may only be used for 
- * evaluation and/or testing purposes, unless otherwise explicitly stated in the terms of a
- * license agreement or nondisclosure agreement with the proprietor of the software. 
- * Any unauthorized publication, transfer to third parties, or duplication of the object or
+
  * source code---either totally or in part---is strictly prohibited.
  *
  *     Copyright (c) 2021 Proprietor: Deleted for purposes of anonymity
