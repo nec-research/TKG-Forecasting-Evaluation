@@ -3,149 +3,40 @@
  *
  *        File: run_exp.sh
  *
- *     Authors: Julia Gastinger, Timo Sztyler, Lokesh Sharma, Anett Schuelke
+ *     Authors: Deleted for purposes of anonymity 
  *
-#  *     Authors: Julia Gastinger (julia.gastinger@neclab.eu), Timo Sztyler, Lokesh Sharma, Anett Schuelke
-#  *
-# NEC Laboratories Europe GmbH, Copyright (c) <year>, All rights reserved.  
-
-#        THIS HEADER MAY NOT BE EXTRACTED OR MODIFIED IN ANY WAY.
- 
-#        PROPRIETARY INFORMATION ---  
-
-# SOFTWARE LICENSE AGREEMENT
-
-# ACADEMIC OR NON-PROFIT ORGANIZATION NONCOMMERCIAL RESEARCH USE ONLY
-
-# BY USING OR DOWNLOADING THE SOFTWARE, YOU ARE AGREEING TO THE TERMS OF THIS
-# LICENSE AGREEMENT.  IF YOU DO NOT AGREE WITH THESE TERMS, YOU MAY NOT USE OR
-# DOWNLOAD THE SOFTWARE.
-
-# This is a license agreement ("Agreement") between your academic institution
-# or non-profit organization or self (called "Licensee" or "You" in this
-# Agreement) and NEC Laboratories Europe GmbH (called "Licensor" in this
-# Agreement).  All rights not specifically granted to you in this Agreement
-# are reserved for Licensor. 
-
-# RESERVATION OF OWNERSHIP AND GRANT OF LICENSE: Licensor retains exclusive
-# ownership of any copy of the Software (as defined below) licensed under this
-# Agreement and hereby grants to Licensee a personal, non-exclusive,
-# non-transferable license to use the Software for noncommercial research
-# purposes, without the right to sublicense, pursuant to the terms and
-# conditions of this Agreement. NO EXPRESS OR IMPLIED LICENSES TO ANY OF
-# LICENSOR'S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. As used in this
-# Agreement, the term "Software" means (i) the actual copy of all or any
-# portion of code for program routines made accessible to Licensee by Licensor
-# pursuant to this Agreement, inclusive of backups, updates, and/or merged
-# copies permitted hereunder or subsequently supplied by Licensor,  including
-# all or any file structures, programming instructions, user interfaces and
-# screen formats and sequences as well as any and all documentation and
-# instructions related to it, and (ii) all or any derivatives and/or
-# modifications created or made by You to any of the items specified in (i).
-
-# CONFIDENTIALITY/PUBLICATIONS: Licensee acknowledges that the Software is
-# proprietary to Licensor, and as such, Licensee agrees to receive all such
-# materials and to use the Software only in accordance with the terms of this
-# Agreement.  Licensee agrees to use reasonable effort to protect the Software
-# from unauthorized use, reproduction, distribution, or publication. All
-# publication materials mentioning features or use of this software must
-# explicitly include an acknowledgement the software was developed by NEC
-# Laboratories Europe GmbH.
-
-# COPYRIGHT: The Software is owned by Licensor.  
-
-# PERMITTED USES:  The Software may be used for your own noncommercial
-# internal research purposes. You understand and agree that Licensor is not
-# obligated to implement any suggestions and/or feedback you might provide
-# regarding the Software, but to the extent Licensor does so, you are not
-# entitled to any compensation related thereto.
-
-# DERIVATIVES: You may create derivatives of or make modifications to the
-# Software, however, You agree that all and any such derivatives and
-# modifications will be owned by Licensor and become a part of the Software
-# licensed to You under this Agreement.  You may only use such derivatives and
-# modifications for your own noncommercial internal research purposes, and you
-# may not otherwise use, distribute or copy such derivatives and modifications
-# in violation of this Agreement.
-
-# BACKUPS:  If Licensee is an organization, it may make that number of copies
-# of the Software necessary for internal noncommercial use at a single site
-# within its organization provided that all information appearing in or on the
-# original labels, including the copyright and trademark notices are copied
-# onto the labels of the copies.
-
-# USES NOT PERMITTED:  You may not distribute, copy or use the Software except
-# as explicitly permitted herein. Licensee has not been granted any trademark
-# license as part of this Agreement.  Neither the name of NEC Laboratories
-# Europe GmbH nor the names of its contributors may be used to endorse or
-# promote products derived from this Software without specific prior written
-# permission.
-
-# You may not sell, rent, lease, sublicense, lend, time-share or transfer, in
-# whole or in part, or provide third parties access to prior or present
-# versions (or any parts thereof) of the Software.
-
-# ASSIGNMENT: You may not assign this Agreement or your rights hereunder
-# without the prior written consent of Licensor. Any attempted assignment
-# without such consent shall be null and void.
-
-# TERM: The term of the license granted by this Agreement is from Licensee's
-# acceptance of this Agreement by downloading the Software or by using the
-# Software until terminated as provided below.  
-
-# The Agreement automatically terminates without notice if you fail to comply
-# with any provision of this Agreement.  Licensee may terminate this Agreement
-# by ceasing using the Software.  Upon any termination of this Agreement,
-# Licensee will delete any and all copies of the Software. You agree that all
-# provisions which operate to protect the proprietary rights of Licensor shall
-# remain in force should breach occur and that the obligation of
-# confidentiality described in this Agreement is binding in perpetuity and, as
-# such, survives the term of the Agreement.
-
-# FEE: Provided Licensee abides completely by the terms and conditions of this
-# Agreement, there is no fee due to Licensor for Licensee's use of the
-# Software in accordance with this Agreement.
-
-# DISCLAIMER OF WARRANTIES:  THE SOFTWARE IS PROVIDED "AS-IS" WITHOUT WARRANTY
-# OF ANY KIND INCLUDING ANY WARRANTIES OF PERFORMANCE OR MERCHANTABILITY OR
-# FITNESS FOR A PARTICULAR USE OR PURPOSE OR OF NON- INFRINGEMENT.  LICENSEE
-# BEARS ALL RISK RELATING TO QUALITY AND PERFORMANCE OF THE SOFTWARE AND
-# RELATED MATERIALS.
-
-# SUPPORT AND MAINTENANCE: No Software support or training by the Licensor is
-# provided as part of this Agreement.  
-
-# EXCLUSIVE REMEDY AND LIMITATION OF LIABILITY: To the maximum extent
-# permitted under applicable law, Licensor shall not be liable for direct,
-# indirect, special, incidental, or consequential damages or lost profits
-# related to Licensee's use of and/or inability to use the Software, even if
-# Licensor is advised of the possibility of such damage.
-
-# EXPORT REGULATION: Licensee agrees to comply with any and all applicable
-# export control laws, regulations, and/or other laws related to embargoes and
-# sanction programs administered by law.
-
-# SEVERABILITY: If any provision(s) of this Agreement shall be held to be
-# invalid, illegal, or unenforceable by a court or other tribunal of competent
-# jurisdiction, the validity, legality and enforceability of the remaining
-# provisions shall not in any way be affected or impaired thereby.
-
-# NO IMPLIED WAIVERS: No failure or delay by Licensor in enforcing any right
-# or remedy under this Agreement shall be construed as a waiver of any future
-# or other exercise of such right or remedy by Licensor.
-
-# GOVERNING LAW: This Agreement shall be construed and enforced in accordance
-# with the laws of Germany without reference to conflict of laws principles.
-# You consent to the personal jurisdiction of the courts of this country and
-# waive their rights to venue outside of Germany.
-
-# ENTIRE AGREEMENT AND AMENDMENTS: This Agreement constitutes the sole and
-# entire agreement between Licensee and Licensor as to the matter set forth
-# herein and supersedes any previous agreements, understandings, and
-# arrangements between the parties relating hereto.
-
-#        THIS HEADER MAY NOT BE EXTRACTED OR MODIFIED IN ANY WAY.
-"""
+ *     Proprietor: Deleted for purposes of anonymity --- PROPRIETARY INFORMATION
+ * 
+ * The software and its source code contain valuable trade secrets and shall be maintained in
+ * confidence and treated as confidential information. The software may only be used for 
+ * evaluation and/or testing purposes, unless otherwise explicitly stated in the terms of a
+ * license agreement or nondisclosure agreement with the proprietor of the software. 
+ * Any unauthorized publication, transfer to third parties, or duplication of the object or
+ * source code---either totally or in part---is strictly prohibited.
+ *
+ *     Copyright (c) 2021 Proprietor: Deleted for purposes of anonymity
+ *     All Rights Reserved.
+ *
+ * THE PROPRIETOR DISCLAIMS ALL WARRANTIES, EITHER EXPRESS OR 
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY 
+ * AND FITNESS FOR A PARTICULAR PURPOSE AND THE WARRANTY AGAINST LATENT 
+ * DEFECTS, WITH RESPECT TO THE PROGRAM AND ANY ACCOMPANYING DOCUMENTATION. 
+ * 
+ * NO LIABILITY FOR CONSEQUENTIAL DAMAGES:
+ * IN NO EVENT SHALL THE PROPRIETOR OR ANY OF ITS SUBSIDIARIES BE 
+ * LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES
+ * FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF INFORMATION, OR
+ * OTHER PECUNIARY LOSS AND INDIRECT, CONSEQUENTIAL, INCIDENTAL,
+ * ECONOMIC OR PUNITIVE DAMAGES) ARISING OUT OF THE USE OF OR INABILITY
+ * TO USE THIS PROGRAM, EVEN IF the proprietor HAS BEEN ADVISED OF
+ * THE POSSIBILITY OF SUCH DAMAGES.
+ * 
+ * For purposes of anonymity, the identity of the proprietor is not given herewith. 
+ * The identity of the proprietor will be given once the review of the 
+ * conference submission is completed. 
+ *
+ * THIS HEADER MAY NOT BE EXTRACTED OR MODIFIED IN ANY WAY.
+ */"""
 
 
 import os
@@ -245,6 +136,37 @@ def get_arguments_list(dataset, model, gpu, setting, feedgt='False', runnr=0, wi
             args_list = [f'--train-history-len 10 --test-history-len 10 --dilate-len 1 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm --weight 0.5  --entity-prediction --relation-prediction --add-static-graph --angle 10 --discount 1 --task-weight 0.7 --gpu {gpu} --runnr {runnr}',
                         f'--train-history-len 10 --test-history-len 10 --dilate-len 1 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm --weight 0.5  --entity-prediction --relation-prediction --add-static-graph --angle 10 --discount 1 --task-weight 0.7 --gpu {gpu} --test --runnr {runnr}',
                         f'--train-history-len 10 --test-history-len 10 --dilate-len 1 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm --weight 0.5  --entity-prediction --relation-prediction --add-static-graph --angle 10 --discount 1 --task-weight 0.7 --gpu {gpu} --test --topk 0 --runnr {runnr}']
+        elif model == 'CEN':
+            if dataset == 'ICEWS14':
+                args_list = [f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 10 --test -1  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 10 --test 0  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 7 --test 2  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 7 --test 3  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 7 --test 4  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}']
+            elif dataset == 'ICEWS18':
+                args_list = [f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 10 --test -1  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 10 --test 0  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 6 --test 2  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 6 --test 3  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 6 --test 4  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}']
+            elif dataset == 'WIKI':
+                args_list = [f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 10 --test -1  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 10 --test 0  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 2 --test 2  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 2 --test 3  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 2 --test 4  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}']
+            elif dataset == 'GDELT': #hyperparams as for WIKI
+                args_list = [f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 10 --test -1  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 10 --test 0  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 10 --test 2  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 10 --test 3  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 2 --train-history-len 10 --test-history-len 10 --test 4  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}']
+            if dataset == 'YAGO': #hyperparams as for ICEWS14
+                args_list = [f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 10 --test -1  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 10 --test 0  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 3 --test 2  --ft_lr=0.001 --norm_weight 1 --gpu {gpu} ',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 3 --test 3  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}',
+                            f'--dilate-len 1 --n-epochs 30 --lr 0.001 --n-layers 2 --evaluate-every 1 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm  --entity-prediction -d {dataset} --start-history-len 3 --train-history-len 10 --test-history-len 3 --test 4  --ft_lr=0.001 --norm_weight 1 --gpu {gpu}']            
     elif model == 'CyGNet':
         if dataset == 'ICEWS18':
             args_list = [f'--entity object --time-stamp 24 -alpha 0.8 -lr 0.001 --n-epoch 30 --hidden-dim 200 -gpu {gpu} --batch-size 1024 --counts 4 --valid-epoch 5 --setting {setting}',
@@ -383,7 +305,7 @@ def eval(args):
     time.sleep(5)
     root_dir = os.getcwd()
 
-    d_dict = {1: 'CyGNet', 2: 'xERTE', 3: 'RE-Net', 4: 'RE-GCN', 5: 'TLogic', 6:'TANGO', 7:'Timetraveler'}
+    d_dict = {1: 'CyGNet', 2: 'xERTE', 3: 'RE-Net', 4: 'RE-GCN', 5: 'TLogic', 6:'TANGO', 7:'Timetraveler', 8:'CEN'}
 
     model = int(args.model)
     model = d_dict[model]
@@ -489,8 +411,37 @@ def eval(args):
                     else:
                         logging.debug(f'Do NOT Feed the GT for testing: multi step')
                         logging.debug(f'Testing parameters: {args_list[2]}')
-                        os.system('python main.py>>regcntest.txt -d {} {}'.format(dataset, args_list[2]))
-            
+                        os.system('python main.py>>regcntest.txt -d {} {}'.format(dataset, args_list[2]))            
+            elif model == "CEN":
+                feedgt_list = [False, True]
+                logging.debug('{} {} - {} - {}'.format('_' * 30, model, dataset, 'Raw and Time ONLY'))
+                args_list = get_arguments_list(dataset, model, gpu, setting="Time")
+                # 0th index: Pretrain models with the minimum length.
+                # 1st index: Curriculum Training.
+                # 2nd index: Evaluate the offline models
+                # 3rd index: Online training data: First, train the models with timestamps in the valid set
+                # 4th index: Online training data: Then, train the models with timestamps in the test set
+                # ----------------------------------------------------------Train
+                os.chdir(os.path.join(model_dir, 'src'))
+                logging.debug(f'Pre-Training parameters: {args_list[0]}')
+                os.system('python main.py -d {} {}'.format(dataset, args_list[0]))
+                logging.debug(f'Curriculum Training: {args_list[1]}')
+                os.system('python main.py -d {} {}'.format(dataset, args_list[1]))
+
+                for feedgt in feedgt_list:
+                    # ----------------------------------------------------------Test
+                    if feedgt == False:
+                        logging.debug(f'Do not Feed the GT for testing: multi step')
+                        logging.debug(f'Testing parameters: {args_list[2]}')
+                        os.system('python main.py>>centest_entityloss.txt -d {} {}'.format(dataset, args_list[2]))
+                    else:
+
+                        logging.debug(f'Online Training parameters: {args_list[3]}')
+                        os.system('python main.py -d {} {}'.format(dataset, args_list[3]))
+                    
+                        logging.debug(f'Do Feed the GT for testing: online learning/ step')
+                        logging.debug(f'Testing parameters: {args_list[4]}')
+                        os.system('python main.py>>centest_entityloss.txt -d {} {}'.format(dataset, args_list[4]))   
             elif model == "CyGNet":
                 settings = ['time', 'static', 'raw'] 
                 for setting in settings:
