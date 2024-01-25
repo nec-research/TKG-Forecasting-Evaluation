@@ -26,3 +26,6 @@
 [submodule "CEN"]
 	path = CEN
 	url = https://github.com/nec-research/CEN
+[submodule "TRKG-Miner"]
+	path = TRKG-Miner
+	url = https://github.com/nec-research/TRKG-Miner
