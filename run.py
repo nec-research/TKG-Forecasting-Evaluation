@@ -163,7 +163,7 @@ def get_arguments_list(dataset, model, gpu, setting, feedgt='False', runnr=0, wi
                     f'--gpu {gpu} --n-hidden 200 --setting {setting} --feedgt {feedgt}  --runnr {runnr}']
         print(args_list)
 
-    elif model == 'TLogic': # size datasets gdelt > wiki > ice0515 > ice18 > yago >ice14
+    elif model == 'TLogic'or model == 'TRKG-Miner': # size datasets gdelt > wiki > ice0515 > ice18 > yago >ice14
         if setseed == 1:
             seed = 12 #as in code
         else:
@@ -412,7 +412,7 @@ def eval(args):
     time.sleep(5)
     root_dir = os.getcwd()
 
-    d_dict = {1: 'CyGNet', 2: 'xERTE', 3: 'RE-Net', 4: 'RE-GCN', 5: 'TLogic', 6:'TANGO', 7:'Timetraveler', 8:'CEN'}
+    d_dict = {1: 'CyGNet', 2: 'xERTE', 3: 'RE-Net', 4: 'RE-GCN', 5: 'TLogic', 6:'TANGO', 7:'Timetraveler', 8:'CEN', 9:'TRKG-Miner'}
 
     model = int(args.model)
     model = d_dict[model]
@@ -494,6 +494,25 @@ def eval(args):
 
                     logging.debug(f'Eval parameters: {args_list[2]}')
                     os.system(f'python3 evaluate.py {args_list[2]}')
+            elif model == 'TRKG-Miner':
+                setting = 'time'
+                model_dir = os.path.join(root_dir, 'TRKG-Miner', 'mycode')
+                feedgt_list = [False, True]
+                window = None
+                for feedgt in feedgt_list:
+                    logging.debug('{} {} - {} - {}'.format('_' * 30, model, dataset, setting))
+                    args_list = get_arguments_list(dataset, model, gpu, setting, feedgt, runnr=run, window=window, setseed=args.setseed)
+                    
+                    os.chdir(model_dir)
+
+                    logging.debug(f'Learning parameters: {args_list[0]}')
+                    os.system(f'python3 learn.py {args_list[0]}')
+
+                    logging.debug(f'Application parameters: {args_list[1]}')
+                    os.system(f'python3 apply.py {args_list[1]}')
+
+                    logging.debug(f'Eval parameters: {args_list[2]}')
+                    os.system(f'python3 evaluate.py {args_list[2]}')   
 
             elif model == "RE-GCN":
                 feedgt_list = [False, True]
